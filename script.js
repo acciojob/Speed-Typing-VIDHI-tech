@@ -61,11 +61,13 @@
     }
 
 
-    function updateTimer() {
-      const timer = document.querySelector('.timer');
-      const elapsedTime = Math.floor((Date.now() - startTime) / 1000);
-      timer.textContent = `Time: ${elapsedTime}s`;
-    }
+    
+function updateTimer() {
+  const timer = document.querySelector('.timer');
+  const elapsedTime = Math.floor((Date.now() - startTime) / 1000);
+  timer.textContent = elapsedTime + 's';
+}
+
 
     
     const quoteInput = document.getElementById('quoteInput');
